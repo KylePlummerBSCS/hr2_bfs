@@ -43,7 +43,7 @@ class Result {
 
         //create results arraylist and fill with -1s
         ArrayList<Integer> results = new ArrayList<>();
-        System.out.printf("Prepping results, size: %d.\n", n);
+        //System.out.printf("Prepping results, size: %d.\n", n);
         for (int i = 0; i <= n; i++) {
             //System.out.printf("Results dummy entry -1 at index: %d.\n", i);
             results.add(-1);
@@ -80,8 +80,8 @@ class Result {
 
         }
 
-        results.remove(s);
-        results.remove(0);
+        results.remove(s);//ignore starting node
+        results.remove(0);//no 0 node
         return results;
     }
 
